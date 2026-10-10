@@ -22,16 +22,19 @@ If you have an idea for a new feature, please open an issue using the **Feature 
 ### Submitting Changes
 
 1. Fork the repository
-2. Create a new branch (`git checkout -b type/short-slug`)
+2. Create a new branch (`git checkout -b type/short-slug`) — see [`AGENTS.md`](AGENTS.md)
 3. Make your changes
-4. Run the local tests (see below)
-5. Commit your changes (`git commit -m 'type: subject'`)
+4. Run the checks below (see [Running the checks](#running-the-checks))
+5. Commit your changes (`git commit -m 'fix: short description'`)
 6. Push to the branch (`git push origin type/short-slug`)
-7. Open a Pull Request
+7. Open a pull request and fill in the template
 
 > **Note on CI:** If you are working from a fork, the CI pipeline may remain in a "waiting for status" state until a maintainer approves it. This is because GitHub does not pass secrets (like `GROQ_API_KEY`) to pull requests from forks. You may need to ping a maintainer to approve the workflow.
 
 ## Development Setup
+
+> **[`AGENTS.md`](AGENTS.md) is the fuller reference** — branch naming, commit format,
+> architecture, and the rules this codebase follows. Read it before your first PR.
 
 1. Clone the repository:
    ```bash
